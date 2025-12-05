@@ -187,7 +187,7 @@ const ArticleContent = () => {
                   </div>
                 </div>
                 <div className="mt-4 text-sm text-secondary-foreground">
-                  <SourceLink url="https://iplo.nl" text="Informatiepunt Leefomgeving" className="text-primary-foreground" />{" "}
+                  <SourceLink url="https://iplo.nl" text="Informatiepunt Leefomgeving" />{" "}
                   | <SourceLink url="https://vng.nl" text="vng.nl" />
                 </div>
               </div>
