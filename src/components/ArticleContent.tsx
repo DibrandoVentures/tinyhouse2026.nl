@@ -127,7 +127,7 @@ const ArticleContent = () => {
           </div>
 
           <div className="space-y-8">
-            <div className="rounded-xl p-6 border border-primary bg-primary text-muted-foreground">
+            <div className="rounded-xl p-6 border border-primary bg-primary">
               <h3 className="text-xl font-semibold mb-4 text-secondary-foreground">Nu al veel mogelijk voor mantelzorgwoning</h3>
               <p className="mb-4 text-secondary-foreground">
                 Onder de huidige regels (Omgevingswet + "bruidsschat") kan een mantelzorgwoning in veel gevallen nu al 
@@ -135,17 +135,17 @@ const ArticleContent = () => {
               </p>
               <div className="grid sm:grid-cols-3 gap-4 mt-4">
                 <div className="bg-white/50 dark:bg-white/5 rounded-lg p-3">
-                  <p className="font-medium text-green-800 dark:text-green-200 text-sm">Op het achtererf</p>
+                  <p className="font-medium text-sm text-accent-foreground">Op het achtererf</p>
                 </div>
                 <div className="bg-white/50 dark:bg-white/5 rounded-lg p-3">
-                  <p className="font-medium text-green-800 dark:text-green-200 text-sm">Max. oppervlakte bijgebouwen</p>
+                  <p className="font-medium text-sm text-accent-foreground">Max. oppervlakte bijgebouwen</p>
                 </div>
                 <div className="bg-white/50 dark:bg-white/5 rounded-lg p-3">
-                  <p className="font-medium text-green-800 dark:text-green-200 text-sm">Voldoen aan Bbl-eisen</p>
+                  <p className="font-medium text-[hero-teal-dark] text-accent-foreground">Voldoen aan Bbl-eisen</p>
                 </div>
               </div>
               <div className="mt-4 text-sm">
-                <SourceLink url="https://iplo.nl" text="Informatiepunt Leefomgeving" /> | <SourceLink url="https://vng.nl" text="vng.nl" />
+                <SourceLink url="https://iplo.nl" text="Informatiepunt Leefomgeving" className="text-primary-foreground" /> | <SourceLink url="https://vng.nl" text="vng.nl" />
               </div>
             </div>
 
