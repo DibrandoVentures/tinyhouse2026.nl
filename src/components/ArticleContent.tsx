@@ -127,9 +127,9 @@ const ArticleContent = () => {
           </div>
 
           <div className="space-y-8">
-            <div className="bg-green-50 dark:bg-green-950/30 rounded-xl p-6 border border-primary">
-              <h3 className="text-xl font-semibold text-green-800 dark:text-green-200 mb-4">Nu al veel mogelijk voor mantelzorgwoning</h3>
-              <p className="text-green-700 dark:text-green-300 mb-4">
+            <div className="rounded-xl p-6 border border-primary bg-primary text-muted-foreground">
+              <h3 className="text-xl font-semibold mb-4 text-secondary-foreground">Nu al veel mogelijk voor mantelzorgwoning</h3>
+              <p className="mb-4 text-secondary-foreground">
                 Onder de huidige regels (Omgevingswet + "bruidsschat") kan een mantelzorgwoning in veel gevallen nu al 
                 vergunningsvrij worden gebouwd als bijbehorend bouwwerk.
               </p>
