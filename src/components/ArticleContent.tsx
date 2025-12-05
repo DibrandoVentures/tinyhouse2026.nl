@@ -1,20 +1,16 @@
 import { AlertTriangle, ExternalLink, CheckCircle, Building2, Users, Ruler, ArrowUp, FileCheck, Clock, Home } from "lucide-react";
-
-const SourceLink = ({ url, text }: { url: string; text: string }) => (
-  <a 
-    href={url} 
-    target="_blank" 
-    rel="noopener noreferrer"
-    className="inline-flex items-center gap-1 text-primary hover:text-primary/80 underline text-sm"
-  >
+const SourceLink = ({
+  url,
+  text
+}: {
+  url: string;
+  text: string;
+}) => <a href={url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-primary hover:text-primary/80 underline text-sm">
     {text}
     <ExternalLink className="h-3 w-3" />
-  </a>
-);
-
+  </a>;
 const ArticleContent = () => {
-  return (
-    <article className="pb-12">
+  return <article className="pb-12">
       
       {/* Intro Section */}
       <section className="container mx-auto px-4 py-12 max-w-4xl">
@@ -55,9 +51,7 @@ const ArticleContent = () => {
             <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
               <Clock className="h-6 w-6 text-primary" />
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-              1. Stand van zaken: waar staan we eind 2025?
-            </h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground">Stand van zaken: waar staan we eind 2025?</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -129,9 +123,7 @@ const ArticleContent = () => {
             <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
               <Building2 className="h-6 w-6 text-primary" />
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-              2. Wat verandert er voor tiny houses?
-            </h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground">Wat verandert er voor tiny houses?</h2>
           </div>
 
           <div className="space-y-8">
@@ -189,16 +181,14 @@ const ArticleContent = () => {
             <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
               <FileCheck className="h-6 w-6 text-primary" />
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-              3. De voorgenomen vergunningsvrije regels
-            </h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground">De voorgenomen vergunningsvrije regels</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-background rounded-xl p-6 shadow-sm border border-border/50">
               <div className="flex items-center gap-3 mb-4">
                 <Building2 className="h-5 w-5 text-primary" />
-                <h3 className="font-semibold">3.1 Waar mag het staan?</h3>
+                <h3 className="font-semibold">Waar mag het staan?</h3>
               </div>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="flex items-start gap-2">
@@ -219,7 +209,7 @@ const ArticleContent = () => {
             <div className="bg-background rounded-xl p-6 shadow-sm border border-border/50">
               <div className="flex items-center gap-3 mb-4">
                 <Users className="h-5 w-5 text-primary" />
-                <h3 className="font-semibold">3.2 Voor wie?</h3>
+                <h3 className="font-semibold">Voor wie?</h3>
               </div>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="flex items-start gap-2">
@@ -243,7 +233,7 @@ const ArticleContent = () => {
             <div className="bg-background rounded-xl p-6 shadow-sm border border-border/50">
               <div className="flex items-center gap-3 mb-4">
                 <Ruler className="h-5 w-5 text-primary" />
-                <h3 className="font-semibold">3.3 Maximale oppervlakte</h3>
+                <h3 className="font-semibold">Maximale oppervlakte</h3>
               </div>
               <div className="space-y-3 text-sm">
                 <div className="bg-muted/50 rounded-lg p-3">
@@ -264,7 +254,7 @@ const ArticleContent = () => {
             <div className="bg-background rounded-xl p-6 shadow-sm border border-border/50">
               <div className="flex items-center gap-3 mb-4">
                 <ArrowUp className="h-5 w-5 text-primary" />
-                <h3 className="font-semibold">3.4 Maximale hoogte</h3>
+                <h3 className="font-semibold">Maximale hoogte</h3>
               </div>
               <div className="space-y-3 text-sm text-muted-foreground">
                 <div className="flex items-center gap-2">
@@ -286,7 +276,7 @@ const ArticleContent = () => {
 
           <div className="grid md:grid-cols-2 gap-6 mt-6">
             <div className="bg-background rounded-xl p-6 shadow-sm border border-border/50">
-              <h3 className="font-semibold mb-3">3.5 Meerdere woningen mogelijk</h3>
+              <h3 className="font-semibold mb-3">Meerdere woningen mogelijk</h3>
               <p className="text-sm text-muted-foreground">
                 Je kunt meerdere mantelzorg- en familiewoningen op je achtererf plaatsen (bijv. voor ouder én kind), 
                 maar de totale oppervlakte blijft beperkt tot max. 80–100 m² samen.
@@ -294,7 +284,7 @@ const ArticleContent = () => {
             </div>
 
             <div className="bg-background rounded-xl p-6 shadow-sm border border-border/50">
-              <h3 className="font-semibold mb-3">3.6 Meldplicht in plaats van vergunning</h3>
+              <h3 className="font-semibold mb-3">Meldplicht in plaats van vergunning</h3>
               <p className="text-sm text-muted-foreground">
                 Vergunningsvrij, maar mogelijk wel een informatieplicht. De mantelzorgverklaring verdwijnt waarschijnlijk 
                 als harde voorwaarde – minder bureaucratie, meer vertrouwen.
@@ -310,22 +300,25 @@ const ArticleContent = () => {
       {/* Section 4 - Wat blijft hetzelfde */}
       <section className="py-16">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
-            4. Wat blijft hetzelfde, ook in 2026?
-          </h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">Wat blijft hetzelfde, ook in 2026?</h2>
 
           <div className="grid sm:grid-cols-2 gap-4">
-            {[
-              { title: "Omgevingswet + omgevingsplan blijven de basis", desc: "Elke gemeente werkt de landelijke regels lokaal uit." },
-              { title: "Technische bouwregels (Bbl) blijven gelden", desc: "Veiligheid, gezondheid, brandveiligheid, geluid enz." },
-              { title: "Geen vrijbrief voor willekeurige verhuur", desc: "Alleen voor mantelzorg en eerstegraads familie." },
-              { title: "Gemeenten houden speelruimte", desc: "Accenten op parkeerdruk, ruimtelijke kwaliteit mogelijk." },
-            ].map((item, index) => (
-              <div key={index} className="bg-muted/30 rounded-xl p-5 border border-border/50">
+            {[{
+            title: "Omgevingswet + omgevingsplan blijven de basis",
+            desc: "Elke gemeente werkt de landelijke regels lokaal uit."
+          }, {
+            title: "Technische bouwregels (Bbl) blijven gelden",
+            desc: "Veiligheid, gezondheid, brandveiligheid, geluid enz."
+          }, {
+            title: "Geen vrijbrief voor willekeurige verhuur",
+            desc: "Alleen voor mantelzorg en eerstegraads familie."
+          }, {
+            title: "Gemeenten houden speelruimte",
+            desc: "Accenten op parkeerdruk, ruimtelijke kwaliteit mogelijk."
+          }].map((item, index) => <div key={index} className="bg-muted/30 rounded-xl p-5 border border-border/50">
                 <h4 className="font-semibold text-foreground mb-2">{item.title}</h4>
                 <p className="text-sm text-muted-foreground">{item.desc}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -333,9 +326,7 @@ const ArticleContent = () => {
       {/* Section 5 - Vergelijking */}
       <section id="vergelijking" className="bg-muted/30 py-16">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
-            5. Nu vs. na inwerkingtreding
-          </h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">Nu vs. na inwerkingtreding</h2>
 
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-background rounded-xl p-6 shadow-sm border border-border/50">
@@ -398,40 +389,31 @@ const ArticleContent = () => {
             <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
               <Home className="h-6 w-6 text-primary" />
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-              6. Hoe bereid je je nu al voor?
-            </h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground">Hoe bereid je je nu al voor?</h2>
           </div>
 
           <div className="space-y-4">
-            {[
-              {
-                step: 1,
-                title: "Check je erf en bestemming",
-                content: "Vraag bij de gemeente: bestemming perceel, grenzen bebouwingsgebied, hoeveel m² al bebouwd."
-              },
-              {
-                step: 2,
-                title: "Bepaal je scenario",
-                content: "Familiewoning (kind/ouders zonder zorgvraag) of mantelzorgwoning (met zorgbehoefte). Schrijf op wie er gaat wonen en wat de relatie is."
-              },
-              {
-                step: 3,
-                title: "Ontwerp binnen de kaders",
-                content: "Achtererfgebied, 40–70 m², max. 5 meter hoog met schuin dak, voldoen aan Bbl-eisen."
-              },
-              {
-                step: 4,
-                title: "Leg je plan bij de gemeente neer",
-                content: "Stuur situatietekening, grove plattegrond en uitleg. Verwijs naar het Besluit versterking regie volkshuisvesting."
-              },
-              {
-                step: 5,
-                title: "Bouw juridisch én praktisch slim",
-                content: "Leg alles schriftelijk vast, kies een ervaren bouwer, bouw flexibel zodat de functie later kan verschuiven."
-              },
-            ].map((item) => (
-              <div key={item.step} className="bg-background rounded-xl p-6 shadow-sm border border-border/50 flex gap-4">
+            {[{
+            step: 1,
+            title: "Check je erf en bestemming",
+            content: "Vraag bij de gemeente: bestemming perceel, grenzen bebouwingsgebied, hoeveel m² al bebouwd."
+          }, {
+            step: 2,
+            title: "Bepaal je scenario",
+            content: "Familiewoning (kind/ouders zonder zorgvraag) of mantelzorgwoning (met zorgbehoefte). Schrijf op wie er gaat wonen en wat de relatie is."
+          }, {
+            step: 3,
+            title: "Ontwerp binnen de kaders",
+            content: "Achtererfgebied, 40–70 m², max. 5 meter hoog met schuin dak, voldoen aan Bbl-eisen."
+          }, {
+            step: 4,
+            title: "Leg je plan bij de gemeente neer",
+            content: "Stuur situatietekening, grove plattegrond en uitleg. Verwijs naar het Besluit versterking regie volkshuisvesting."
+          }, {
+            step: 5,
+            title: "Bouw juridisch én praktisch slim",
+            content: "Leg alles schriftelijk vast, kies een ervaren bouwer, bouw flexibel zodat de functie later kan verschuiven."
+          }].map(item => <div key={item.step} className="bg-background rounded-xl p-6 shadow-sm border border-border/50 flex gap-4">
                 <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold flex-shrink-0">
                   {item.step}
                 </div>
@@ -439,8 +421,7 @@ const ArticleContent = () => {
                   <h3 className="font-semibold text-foreground mb-2">{item.title}</h3>
                   <p className="text-sm text-muted-foreground">{item.content}</p>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -448,38 +429,28 @@ const ArticleContent = () => {
       {/* Section 7 - FAQ */}
       <section id="faq" className="bg-muted/30 py-16">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
-            7. Veelgestelde vragen
-          </h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">Veelgestelde vragen</h2>
 
           <div className="space-y-4">
-            {[
-              {
-                q: "Is het al 100% zeker dat ik in 2026 zonder vergunning mag bouwen?",
-                a: "Nog niet. De richting ligt vast, maar de wet is nog bij de Eerste Kamer. Details en exacte datum kunnen nog verschuiven."
-              },
-              {
-                q: "Geldt dit alleen binnen de bebouwde kom?",
-                a: "Nee, de regels richten zich op wonen op eigen erf bij een woning, ongeacht bebouwde kom."
-              },
-              {
-                q: "Kan ik de familiewoning verhuren aan iemand die geen familie is?",
-                a: "Nee, de vergunningsvrije regeling is specifiek voor eerstegraads familie en mantelzorg."
-              },
-              {
-                q: "Moet een mantelzorgwoning weg als de zorg stopt?",
-                a: "Nieuwe regels gaan richting meer flexibiliteit: bouwwerk kan blijven staan, gebruik moet aansluiten bij regels."
-              },
-              {
-                q: "Is het slim om te wachten tot alles definitief is?",
-                a: "Niet per se. Je kunt nu al veel voorbereiden: erf analyseren, scenario kiezen, ontwerp maken, met gemeente spreken."
-              },
-            ].map((item, index) => (
-              <div key={index} className="bg-background rounded-xl p-6 shadow-sm border border-border/50">
+            {[{
+            q: "Is het al 100% zeker dat ik in 2026 zonder vergunning mag bouwen?",
+            a: "Nog niet. De richting ligt vast, maar de wet is nog bij de Eerste Kamer. Details en exacte datum kunnen nog verschuiven."
+          }, {
+            q: "Geldt dit alleen binnen de bebouwde kom?",
+            a: "Nee, de regels richten zich op wonen op eigen erf bij een woning, ongeacht bebouwde kom."
+          }, {
+            q: "Kan ik de familiewoning verhuren aan iemand die geen familie is?",
+            a: "Nee, de vergunningsvrije regeling is specifiek voor eerstegraads familie en mantelzorg."
+          }, {
+            q: "Moet een mantelzorgwoning weg als de zorg stopt?",
+            a: "Nieuwe regels gaan richting meer flexibiliteit: bouwwerk kan blijven staan, gebruik moet aansluiten bij regels."
+          }, {
+            q: "Is het slim om te wachten tot alles definitief is?",
+            a: "Niet per se. Je kunt nu al veel voorbereiden: erf analyseren, scenario kiezen, ontwerp maken, met gemeente spreken."
+          }].map((item, index) => <div key={index} className="bg-background rounded-xl p-6 shadow-sm border border-border/50">
                 <h4 className="font-semibold text-foreground mb-2">{item.q}</h4>
                 <p className="text-sm text-muted-foreground">{item.a}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -487,41 +458,40 @@ const ArticleContent = () => {
       {/* Section 8 - Verder lezen */}
       <section className="py-16">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-            8. Verder lezen
-          </h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">Verder lezen</h2>
 
           <p className="text-muted-foreground mb-8">
             Wil je alles rustig uitpluizen? Ga per deelonderwerp verder:
           </p>
 
           <div className="grid gap-4 sm:grid-cols-2">
-            {[
-              { name: "tinyhousewet.nl", url: "https://tinyhousewet.nl", desc: "Omgevingswet, omgevingsplan, definities" },
-              { name: "tinyhousevergunningsvrij.nl", url: "https://tinyhousevergunningsvrij.nl", desc: "Focus op vergunningsvrij bouwen" },
-              { name: "tinyhouseopeigengrond.nl", url: "https://tinyhouseopeigengrond.nl", desc: "Bestemmingen, kopen vs. pachten, erfgrenzen" },
-              { name: "tinyhousescompleet.nl", url: "https://tinyhousescompleet.nl", desc: "Overkoepelend stappenplan van droom tot oplevering" },
-            ].map((link) => (
-              <a 
-                key={link.name}
-                href={link.url} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="group bg-background rounded-xl p-6 hover:shadow-md transition-all border border-border/50 hover:border-primary/30"
-              >
+            {[{
+            name: "tinyhousewet.nl",
+            url: "https://tinyhousewet.nl",
+            desc: "Omgevingswet, omgevingsplan, definities"
+          }, {
+            name: "tinyhousevergunningsvrij.nl",
+            url: "https://tinyhousevergunningsvrij.nl",
+            desc: "Focus op vergunningsvrij bouwen"
+          }, {
+            name: "tinyhouseopeigengrond.nl",
+            url: "https://tinyhouseopeigengrond.nl",
+            desc: "Bestemmingen, kopen vs. pachten, erfgrenzen"
+          }, {
+            name: "tinyhousescompleet.nl",
+            url: "https://tinyhousescompleet.nl",
+            desc: "Overkoepelend stappenplan van droom tot oplevering"
+          }].map(link => <a key={link.name} href={link.url} target="_blank" rel="noopener noreferrer" className="group bg-background rounded-xl p-6 hover:shadow-md transition-all border border-border/50 hover:border-primary/30">
                 <div className="flex items-center gap-2 mb-2">
                   <h4 className="font-semibold text-primary group-hover:underline">{link.name}</h4>
                   <ExternalLink className="h-4 w-4 text-primary" />
                 </div>
                 <p className="text-sm text-muted-foreground">{link.desc}</p>
-              </a>
-            ))}
+              </a>)}
           </div>
         </div>
       </section>
 
-    </article>
-  );
+    </article>;
 };
-
 export default ArticleContent;
