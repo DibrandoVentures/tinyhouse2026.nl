@@ -8,8 +8,10 @@ const Footer = ({ className }: FooterProps = {}) => {
   const currentYear = new Date().getFullYear();
   
   const externalLinks = [
-    { name: "tinyhousewoonregels.nl", url: "https://tinyhousewoonregels.nl" },
-    { name: "tinyhouseopwielen.nl", url: "https://tinyhouseopwielen.nl" },
+    { name: "tinyhousewet.nl", url: "https://tinyhousewet.nl" },
+    { name: "tinyhousevergunningsvrij.nl", url: "https://tinyhousevergunningsvrij.nl" },
+    { name: "tinyhouseopeigengrond.nl", url: "https://tinyhouseopeigengrond.nl" },
+    { name: "tinyhousescompleet.nl", url: "https://tinyhousescompleet.nl" },
   ];
 
   const scrollToSection = (id: string) => {
@@ -24,9 +26,9 @@ const Footer = ({ className }: FooterProps = {}) => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="font-bold text-lg mb-4">tinyhouseverzekeren.nl</h3>
+            <h3 className="font-bold text-lg mb-4">tinyhouse2026.nl</h3>
             <p className="text-sm text-navy-dark/80">
-              Onafhankelijke informatie over het verzekeren van tiny houses in Nederland.
+              Actuele informatie over de nieuwe regels voor tiny houses op eigen erf vanaf 2026.
             </p>
           </div>
 
@@ -34,16 +36,16 @@ const Footer = ({ className }: FooterProps = {}) => {
             <h4 className="font-semibold mb-4">Links</h4>
             <div className="space-y-2">
               <button
-                onClick={() => scrollToSection("over")}
+                onClick={() => scrollToSection("home")}
                 className="block text-sm text-navy-dark/80 hover:text-primary transition-colors"
               >
-                Over deze site
+                Home
               </button>
               <button
-                onClick={() => scrollToSection("over")}
+                onClick={() => scrollToSection("artikel")}
                 className="block text-sm text-navy-dark/80 hover:text-primary transition-colors"
               >
-                Disclaimer
+                De regels
               </button>
             </div>
           </div>
@@ -68,7 +70,7 @@ const Footer = ({ className }: FooterProps = {}) => {
         </div>
 
         <div className="pt-8 border-t border-border/20 text-center text-sm text-navy-dark/60">
-          <p>© {currentYear} tinyhouseverzekeren.nl - Alle rechten voorbehouden</p>
+          <p>© {currentYear} tinyhouse2026.nl - Alle rechten voorbehouden</p>
         </div>
       </div>
     </footer>
