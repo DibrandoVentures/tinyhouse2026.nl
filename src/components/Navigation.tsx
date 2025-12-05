@@ -14,8 +14,11 @@ const Navigation = () => {
   };
 
   const navItems = [
-    { id: "home", label: "Home" },
-    { id: "artikel", label: "De regels" },
+    { id: "stand-van-zaken", label: "Stand van zaken" },
+    { id: "wat-verandert", label: "Wat verandert er?" },
+    { id: "regels", label: "De regels" },
+    { id: "voorbereiding", label: "Voorbereiding" },
+    { id: "faq", label: "FAQ" },
   ];
 
   return (
@@ -30,8 +33,8 @@ const Navigation = () => {
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-6">
-            {navItems.slice(1).map((item) => (
+          <div className="hidden lg:flex items-center gap-6">
+            {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
@@ -46,7 +49,7 @@ const Navigation = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden"
+            className="lg:hidden"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -55,9 +58,9 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 border-t border-border">
+          <div className="lg:hidden py-4 border-t border-border">
             <div className="flex flex-col gap-4">
-              {navItems.slice(1).map((item) => (
+              {navItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
