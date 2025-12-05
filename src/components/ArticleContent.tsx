@@ -206,8 +206,7 @@ const ArticleContent = () => {
                   </p>
                 </div>
                 <div className="mt-4 text-sm">
-                  <SourceLink url="https://volkshuisvestingnederland.nl" text="volkshuisvestingnederland.nl" /> |{" "}
-                  <SourceLink url="https://goedverblijven.nl" text="Goed Verblijven" />
+                  <SourceLink url="https://volkshuisvestingnederland.nl" text="volkshuisvestingnederland.nl" />
                 </div>
               </div>
             </div>
