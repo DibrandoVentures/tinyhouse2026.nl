@@ -128,9 +128,7 @@ const ArticleContent = () => {
 
           <div className="space-y-8">
             <div className="bg-green-50 dark:bg-green-950/30 rounded-xl p-6 border border-green-200 dark:border-green-800">
-              <h3 className="text-xl font-semibold text-green-800 dark:text-green-200 mb-4">
-                2.1 Nu al veel mogelijk voor mantelzorgwoning
-              </h3>
+              <h3 className="text-xl font-semibold text-green-800 dark:text-green-200 mb-4">Nu al veel mogelijk voor mantelzorgwoning</h3>
               <p className="text-green-700 dark:text-green-300 mb-4">
                 Onder de huidige regels (Omgevingswet + "bruidsschat") kan een mantelzorgwoning in veel gevallen nu al 
                 vergunningsvrij worden gebouwd als bijbehorend bouwwerk.
@@ -152,9 +150,7 @@ const ArticleContent = () => {
             </div>
 
             <div className="bg-primary/5 rounded-xl p-6 border border-primary/20">
-              <h3 className="text-xl font-semibold text-foreground mb-4">
-                2.2 Nieuw: familiewoning op eigen erf
-              </h3>
+              <h3 className="text-xl font-semibold text-foreground mb-4">Nieuw: familiewoning op eigen erf</h3>
               <p className="text-muted-foreground mb-4">
                 Niet alleen mantelzorgwoningen, maar óók <strong>familiewoningen voor eerstegraads familie</strong> 
                 (ouders/kinderen, inclusief adoptie- en pleegrelaties) kunnen vergunningsvrij worden.
