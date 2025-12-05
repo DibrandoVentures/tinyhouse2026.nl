@@ -13,19 +13,19 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative bg-hero-teal overflow-hidden pt-16">
-      <div className="absolute inset-0 bg-gradient-to-br from-hero-teal to-hero-teal-dark opacity-90"></div>
+    <section id="home" className="relative bg-primary overflow-hidden pt-16">
+      <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-90"></div>
       
       <div className="container relative z-10 mx-auto px-4 py-16 md:py-24">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="text-white">
-            <p className="text-sm uppercase tracking-wider text-white/70 mb-2">
+          <div className="text-primary-foreground">
+            <p className="text-sm uppercase tracking-wider text-primary-foreground/70 mb-2">
               Actueel tot eind 2025
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               Tiny house 2026: nieuwe regels op eigen erf
             </h1>
-            <p className="text-lg md:text-xl mb-8 text-white/90 leading-relaxed">
+            <p className="text-lg md:text-xl mb-8 text-primary-foreground/90 leading-relaxed">
               Vanaf 2026 komt er meer ruimte voor tiny houses op eigen erf. Met de Wet versterking regie volkshuisvesting 
               wil de overheid het makkelijker maken om vergunningsvrij een mantelzorg- of familiewoning te plaatsen.
             </p>
@@ -35,7 +35,7 @@ const Hero = () => {
                 size="lg" 
                 variant="secondary" 
                 onClick={() => scrollToSection("artikel")} 
-                className="bg-white text-hero-teal hover:bg-white/90 shadow-lg"
+                className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 shadow-lg"
               >
                 Lees de volledige gids
                 <ArrowRight className="ml-2 h-5 w-5" />
