@@ -10,7 +10,6 @@ import caringHandsImage from "@/assets/caring-hands.png";
 import blueprintImage from "@/assets/tiny-blueprint.png";
 import tinyPergolaImage from "@/assets/tiny-pergola-garden.jpg";
 import tinyModernDeckImage from "@/assets/tiny-modern-deck.jpg";
-
 const SourceLink = ({
   url,
   text
@@ -21,7 +20,6 @@ const SourceLink = ({
     {text}
     <ExternalLink className="h-3 w-3" />
   </a>;
-
 const ArticleContent = () => {
   return <article className="pb-12">
       
@@ -58,25 +56,18 @@ const ArticleContent = () => {
           </div>
           
           <div className="lg:col-span-2">
-            <img 
-              src={tinyErfImage} 
-              alt="Rode tiny house op eigen erf met groene omgeving" 
-              className="rounded-2xl shadow-lg w-full h-auto object-cover"
-            />
+            <img src={tinyErfImage} alt="Rode tiny house op eigen erf met groene omgeving" className="rounded-2xl shadow-lg w-full h-auto object-cover" />
           </div>
         </div>
       </section>
 
       {/* Section 1 - Stand van zaken with background image */}
       <section id="stand-van-zaken" className="relative py-16 overflow-hidden">
-        <div 
-          className="absolute inset-0 opacity-5"
-          style={{
-            backgroundImage: `url(${blueprintImage})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
-          }}
-        />
+        <div className="absolute inset-0 opacity-5" style={{
+        backgroundImage: `url(${blueprintImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }} />
         <div className="absolute inset-0 bg-muted/60" />
         
         <div className="container relative z-10 mx-auto px-4 max-w-6xl">
@@ -131,11 +122,7 @@ const ArticleContent = () => {
             </div>
 
             <div className="lg:col-span-1">
-              <img 
-                src={wetTinyImage} 
-                alt="Wetgeving en regelgeving voor tiny houses" 
-                className="rounded-2xl shadow-lg w-full h-full object-cover min-h-[300px]"
-              />
+              <img src={wetTinyImage} alt="Wetgeving en regelgeving voor tiny houses" className="rounded-2xl shadow-lg w-full h-full object-cover min-h-[300px]" />
             </div>
           </div>
 
@@ -163,11 +150,7 @@ const ArticleContent = () => {
       <section className="py-8">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <img 
-              src={tinyModernDeckImage} 
-              alt="Modern tiny house met houten terras" 
-              className="rounded-2xl shadow-lg w-full h-64 md:h-80 object-cover"
-            />
+            <img src={tinyModernDeckImage} alt="Modern tiny house met houten terras" className="rounded-2xl shadow-lg w-full h-64 md:h-80 object-cover" />
           </div>
         </div>
       </section>
@@ -201,8 +184,8 @@ const ArticleContent = () => {
                     <p className="font-medium text-sm text-accent-foreground">Voldoen aan Bbl-eisen</p>
                   </div>
                 </div>
-                <div className="mt-4 text-sm text-primary-foreground">
-                  <SourceLink url="https://iplo.nl" text="Informatiepunt Leefomgeving" /> | <SourceLink url="https://vng.nl" text="vng.nl" />
+                <div className="mt-4 text-sm text-secondary-foreground">
+                  <SourceLink url="https://iplo.nl" text="Informatiepunt Leefomgeving" className="text-primary-foreground" /> | <SourceLink url="https://vng.nl" text="vng.nl" />
                 </div>
               </div>
 
@@ -226,16 +209,8 @@ const ArticleContent = () => {
             </div>
 
             <div className="space-y-4">
-              <img 
-                src={mantelzorgImage} 
-                alt="Mantelzorg en familiebanden - moeder en dochter" 
-                className="rounded-2xl shadow-lg w-full h-64 object-cover"
-              />
-              <img 
-                src={caringHandsImage} 
-                alt="Zorgende handen - mantelzorg symboliek" 
-                className="rounded-2xl shadow-lg w-full h-48 object-cover"
-              />
+              <img src={mantelzorgImage} alt="Mantelzorg en familiebanden - moeder en dochter" className="rounded-2xl shadow-lg w-full h-64 object-cover" />
+              <img src={caringHandsImage} alt="Zorgende handen - mantelzorg symboliek" className="rounded-2xl shadow-lg w-full h-48 object-cover" />
             </div>
           </div>
         </div>
@@ -368,16 +343,8 @@ const ArticleContent = () => {
       <section className="py-8">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-6">
-            <img 
-              src={tinyCommunityImage} 
-              alt="Tiny house community met meerdere tiny houses" 
-              className="rounded-2xl shadow-lg w-full h-64 object-cover"
-            />
-            <img 
-              src={tinyPergolaImage} 
-              alt="Luxe tiny house met pergola in de tuin" 
-              className="rounded-2xl shadow-lg w-full h-64 object-cover"
-            />
+            <img src={tinyCommunityImage} alt="Tiny house community met meerdere tiny houses" className="rounded-2xl shadow-lg w-full h-64 object-cover" />
+            <img src={tinyPergolaImage} alt="Luxe tiny house met pergola in de tuin" className="rounded-2xl shadow-lg w-full h-64 object-cover" />
           </div>
         </div>
       </section>
@@ -513,11 +480,7 @@ const ArticleContent = () => {
             </div>
 
             <div className="lg:col-span-1 space-y-4">
-              <img 
-                src={kostenImage} 
-                alt="Bouwkosten berekenen voor tiny house" 
-                className="rounded-2xl shadow-lg w-full h-auto object-cover"
-              />
+              <img src={kostenImage} alt="Bouwkosten berekenen voor tiny house" className="rounded-2xl shadow-lg w-full h-auto object-cover" />
               <div className="bg-primary/5 rounded-xl p-4 border border-primary/20">
                 <p className="text-sm font-medium text-foreground">Tip:</p>
                 <p className="text-sm text-muted-foreground mt-1">
